@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EA5C57BE-6073-4785-9347-4CB89271572F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ControleFutebol.AplicativoDesktop</RootNamespace>
+    <AssemblyName>ControleFutebol.AplicativoDesktop</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Oficial|AnyCPU'">
+    <OutputPath>bin\Oficial\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\Icone_ControleFutebol.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAbrirCaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbrirCaixa.Designer.cs">
+      <DependentUpon>frmAbrirCaixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastrarPelada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastrarPelada.Designer.cs">
+      <DependentUpon>frmCadastrarPelada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroDespesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroDespesa.Designer.cs">
+      <DependentUpon>frmCadastroDespesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroFormaPagamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroFormaPagamento.Designer.cs">
+      <DependentUpon>frmCadastroFormaPagamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroMensalidadeMensalista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroMensalidadeMensalista.Designer.cs">
+      <DependentUpon>frmCadastroMensalidadeMensalista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroMensalista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroMensalista.Designer.cs">
+      <DependentUpon>frmCadastroMensalista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroReceita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroReceita.Designer.cs">
+      <DependentUpon>frmCadastroReceita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroTipoPagamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroTipoPagamento.Designer.cs">
+      <DependentUpon>frmCadastroTipoPagamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFecharCaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFecharCaixa.Designer.cs">
+      <DependentUpon>frmFecharCaixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManutencaoCaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManutencaoCaixa.Designer.cs">
+      <DependentUpon>frmManutencaoCaixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManutencaoDespesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManutencaoDespesa.Designer.cs">
+      <DependentUpon>frmManutencaoDespesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManutencaoFormaPagamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManutencaoFormaPagamento.Designer.cs">
+      <DependentUpon>frmManutencaoFormaPagamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManutencaoMensalidadeMensalista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManutencaoMensalidadeMensalista.Designer.cs">
+      <DependentUpon>frmManutencaoMensalidadeMensalista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManutencaoMensalista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManutencaoMensalista.Designer.cs">
+      <DependentUpon>frmManutencaoMensalista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManutencaoPartida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManutencaoPartida.Designer.cs">
+      <DependentUpon>frmManutencaoPartida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManutencaoReceita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManutencaoReceita.Designer.cs">
+      <DependentUpon>frmManutencaoReceita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManutencaoTipoPagamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManutencaoTipoPagamento.Designer.cs">
+      <DependentUpon>frmManutencaoTipoPagamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMovimentacoesCaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMovimentacoesCaixa.Designer.cs">
+      <DependentUpon>frmMovimentacoesCaixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuestaoCaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuestaoCaixa.Designer.cs">
+      <DependentUpon>frmQuestaoCaixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuestaoMensalidade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuestaoMensalidade.Designer.cs">
+      <DependentUpon>frmQuestaoMensalidade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransferirSaldoCaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransferirSaldoCaixa.Designer.cs">
+      <DependentUpon>frmTransferirSaldoCaixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TituloFormularios.cs" />
+    <Compile Include="UserControlConvidadoItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlConvidadoItem.Designer.cs">
+      <DependentUpon>UserControlConvidadoItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlFormacaoPartida.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlFormacaoPartida.Designer.cs">
+      <DependentUpon>UserControlFormacaoPartida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlListaConvidado.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlListaConvidado.Designer.cs">
+      <DependentUpon>UserControlListaConvidado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlListaMensalistas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlListaMensalistas.Designer.cs">
+      <DependentUpon>UserControlListaMensalistas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlMensalista.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlMensalista.Designer.cs">
+      <DependentUpon>UserControlMensalista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlPagamentoPartidaItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlPagamentoPartidaItem.Designer.cs">
+      <DependentUpon>UserControlPagamentoPartidaItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlPagamentoPartidaLista.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlPagamentoPartidaLista.Designer.cs">
+      <DependentUpon>UserControlPagamentoPartidaLista.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmAbrirCaixa.resx">
+      <DependentUpon>frmAbrirCaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastrarPelada.resx">
+      <DependentUpon>frmCadastrarPelada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroDespesa.resx">
+      <DependentUpon>frmCadastroDespesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroFormaPagamento.resx">
+      <DependentUpon>frmCadastroFormaPagamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroMensalidadeMensalista.resx">
+      <DependentUpon>frmCadastroMensalidadeMensalista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroMensalista.resx">
+      <DependentUpon>frmCadastroMensalista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroReceita.resx">
+      <DependentUpon>frmCadastroReceita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroTipoPagamento.resx">
+      <DependentUpon>frmCadastroTipoPagamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFecharCaixa.resx">
+      <DependentUpon>frmFecharCaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManutencaoCaixa.resx">
+      <DependentUpon>frmManutencaoCaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManutencaoDespesa.resx">
+      <DependentUpon>frmManutencaoDespesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManutencaoFormaPagamento.resx">
+      <DependentUpon>frmManutencaoFormaPagamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManutencaoMensalidadeMensalista.resx">
+      <DependentUpon>frmManutencaoMensalidadeMensalista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManutencaoMensalista.resx">
+      <DependentUpon>frmManutencaoMensalista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManutencaoPartida.resx">
+      <DependentUpon>frmManutencaoPartida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManutencaoReceita.resx">
+      <DependentUpon>frmManutencaoReceita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManutencaoTipoPagamento.resx">
+      <DependentUpon>frmManutencaoTipoPagamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMovimentacoesCaixa.resx">
+      <DependentUpon>frmMovimentacoesCaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuestaoCaixa.resx">
+      <DependentUpon>frmQuestaoCaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuestaoMensalidade.resx">
+      <DependentUpon>frmQuestaoMensalidade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransferirSaldoCaixa.resx">
+      <DependentUpon>frmTransferirSaldoCaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserControlConvidadoItem.resx">
+      <DependentUpon>UserControlConvidadoItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlFormacaoPartida.resx">
+      <DependentUpon>UserControlFormacaoPartida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlListaConvidado.resx">
+      <DependentUpon>UserControlListaConvidado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlListaMensalistas.resx">
+      <DependentUpon>UserControlListaMensalistas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlMensalista.resx">
+      <DependentUpon>UserControlMensalista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlPagamentoPartidaItem.resx">
+      <DependentUpon>UserControlPagamentoPartidaItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlPagamentoPartidaLista.resx">
+      <DependentUpon>UserControlPagamentoPartidaLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ControleFutebol.BLL\ControleFutebol.BLL.csproj">
+      <Project>{6d75f6a9-2e3c-4e75-a0e8-20604fa2be15}</Project>
+      <Name>ControleFutebol.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ControleFutebol.DTO\ControleFutebol.DTO.csproj">
+      <Project>{5ac07052-d236-4171-9ad2-a1bc7e23630a}</Project>
+      <Name>ControleFutebol.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ControleFutebol.Utilitarios\ControleFutebol.Utilitarios.csproj">
+      <Project>{7142787a-4987-41d2-985a-cd95b91c9dd7}</Project>
+      <Name>ControleFutebol.Utilitarios</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Avancar_Botao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fechar_Botao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Salvar_Botao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Voltar_Botao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icone_ControleFutebol.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
