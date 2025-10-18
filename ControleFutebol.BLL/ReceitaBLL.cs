@@ -215,7 +215,7 @@ namespace ControleFutebol.BLL
             {
                 if(registro.DataReceita == new DateTime() || registro.DataReceita == new DateTime(1, 1, 1))
                 {
-                    throw new CampoVazioException("ERRO! Campo Data da ")
+                    throw new CampoVazioException("ERRO! Campo Data da ");
                 }
             }
             catch (Exception)
